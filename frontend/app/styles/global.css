@@ -4,6 +4,7 @@ body {
   margin: 0;
   line-height: 16.8px;
   font-size: 14px;
+  color: #1e1e1e;
 }
 
 * {
@@ -12,6 +13,7 @@ body {
 }
 
 a {
+  color: #3066be;
   text-decoration: none;
 }
 
@@ -29,4 +31,12 @@ ul {
 
 li + li {
   margin-top: 8px;
+}
+
+p {
+  margin: unset;
+}
+
+p + p {
+  margin-top: 0.5rem;
 }

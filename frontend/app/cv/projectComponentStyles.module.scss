@@ -1,14 +1,18 @@
 .projectContainer {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1rem;
   border-radius: 1.25rem;
   border: 1px solid #3066be;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   cursor: pointer;
+  color: #1e1e1e;
+  line-height: 120%;
 
   & + & {
-    margin-top: 1.5rem;
+    margin-top: 40px;
   }
 
   &:hover {
@@ -21,22 +25,27 @@
 }
 
 .arrowIcon {
+  display: none;
   position: absolute;
   right: 1.25rem;
   top: 1.25rem;
 }
 
 .projectImageContainer {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
-  margin-right: 1.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectImage {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .projectDescriptionContainer {
@@ -47,10 +56,10 @@
 .projectTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1e1e1e;
-  line-height: 120%;
-  margin-bottom: 1.25rem;
+  margin: unset;
+  margin-bottom: 0.5rem;
 }
 
 .projectDescription {
+  margin: unset;
 }

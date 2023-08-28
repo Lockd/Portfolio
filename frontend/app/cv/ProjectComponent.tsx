@@ -3,12 +3,14 @@ import Link from "next/link";
 import { IProject } from "../utils/types";
 import styles from "./projectComponentStyles.module.scss";
 
-const ProjectComponent: React.FC<IProject> = ({ title, description, img }) => {
+const ProjectComponent: React.FC<IProject> = ({
+  title,
+  description,
+  img,
+  link,
+}) => {
   return (
-    <Link
-      href={"/projects/" + title.toLowerCase().replaceAll(" ", "-")}
-      className={styles.projectContainer}
-    >
+    <Link href={link} className={styles.projectContainer}>
       <svg
         width="16"
         height="16"

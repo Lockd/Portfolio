@@ -1,20 +1,37 @@
 .workHistoryContainer {
+  & + & {
+    margin-top: 40px;
+  }
 }
 
-.workHistoryContainer + .workHistoryContainer {
-  margin-top: 40px;
+.workHistoryHeaderContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .workHistoryTitleCotnainer {
+  display: flex;
+  flex-direction: column-reverse;
+  // DESKTOP STYLES
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
 }
 
 .workHistoryTitle {
 }
 
+.workHistoryTitleText {
+  font-weight: 700;
+}
+
 .workHistoryDates {
+  margin-bottom: 0.5rem;
+  color: rgba(30, 30, 30, 0.5);
 }
 
 .workHistoryDescription {
+  margin-top: 0.5rem;
 }
 
 .workHistoryBullets {

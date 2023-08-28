@@ -26,12 +26,11 @@ const Sidebar: React.FC<ISidebar> = ({ sections }) => {
         </div>
         <div className={styles.personalInfoText}>
           <h1 className={styles.personalInfoTitle}>Grigorii Pika</h1>
-          <p className={styles.personalInfoJobTitle}>
-            Senior Frontend Engineer at EPAM Systems
-          </p>
+          <p className={styles.personalInfoJobTitle}>Frontend Engineer</p>
           <p className={styles.personalInfoDescription}>
-            {/* TODO add propper text here */}I Enjoy doing different code
-            related stuff, wow
+            {/* TODO think of a text for this place */}I enjoy creating clean,
+            fast, and accessible user interfaces while helping businesses to
+            deliver the best possible user experiences
           </p>
         </div>
       </div>
@@ -49,7 +48,6 @@ const Sidebar: React.FC<ISidebar> = ({ sections }) => {
           </div>
         ))}
       </nav>
-      {/* TODO add all the links and icons*/}
       <div className={styles.buttonsContainer}>
         <Link
           className={styles.ctaButton}
@@ -63,13 +61,13 @@ const Sidebar: React.FC<ISidebar> = ({ sections }) => {
         <Link className={styles.ctaButton} href="mailto:pikagrigoriy@gmail.com">
           <img src="/email.svg" alt="Email" />
         </Link>
-        <Link
+        <a
           className={styles.downloadResume}
           href="/Grigorii-Pika_Frontend-Engineer_Resume.pdf"
-          download
+          download="Grigorii-Pika_Frontend-Engineer_Resume.pdf"
         >
           Print resume
-        </Link>
+        </a>
       </div>
     </div>
   );

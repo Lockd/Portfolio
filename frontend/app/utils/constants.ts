@@ -91,8 +91,45 @@ export const Proejcts: IProject[] = [
     img: "/dinos-nigthmare.png",
     title: "Dino's nightmare",
     description: [
-      "A project from my first game jam completed in under 72 hours.",
-      "The theme was hell, so now poor little dinosaurs have to dodge asteroids for eternity",
+      "That is the first game project that I have ever completed.",
+      "",
+      "The theme of the Jam was Hell and we decided to create a game about hell for dinosaurs... Now the poor dinos have to dodge asteroids for eternity",
+      "",
+      "🏆 Still proud of this tiny game, took 3rd place out of 56 other submissions",
     ],
+    link: "https://lockd.itch.io/dinos-nightmare",
+  },
+  {
+    img: "/WindowsTD-logo.png",
+    title: "Windows Defense",
+    description: [
+      "Your good old Windows XP is being attacked by god knows what. Seems like even files from MacOS are here. Build towers and make sure to protect your precious computer!",
+      "A tower defense game completed in a bit under 72 hours by 2 devs.",
+      "",
+      "🏆 #7 out of 123 entries in the enjoyment category",
+    ],
+    link: "https://lockd.itch.io/windows-defense",
+  },
+  {
+    img: "/sendburg-logo.png",
+    title: "Sendburg Delivery Service",
+    description: [
+      'Jam\'s theme was "Delivery" so we came up with a puzzle game based on one of the oldest game concepts. Take different shapes and try placing them in the box with a very odd shape.',
+      "",
+      "Ludum dare submission made in 48 hours by 3 devs.",
+    ],
+    link: "https://lockd.itch.io/sendburgdeliveryservice",
+  },
+  {
+    img: "/gentle-ghost-logo.png",
+    title: "Gentle gHost",
+    description: [
+      "An extremely challenging project where I was working in a team of 13 other devs, artists, and musicians.",
+      "You play as a gentle ghost who is trying to help his relative and clean up the house without scaring her to death",
+      'Think "Neighbours from Hell" but vice-versa and cute',
+      "",
+      "🏆 Was rated #198 out of 6820 other entries.",
+    ],
+    link: "https://ldrg.itch.io/gentleghost",
   },
 ];

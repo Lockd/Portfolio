@@ -16,4 +16,5 @@ export interface IProject {
   title: string;
   img: string;
   description: string[];
+  link: string;
 }
