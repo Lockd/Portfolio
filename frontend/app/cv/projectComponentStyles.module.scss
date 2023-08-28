@@ -1,15 +1,18 @@
+@import "../styles/variables.scss";
+
 .projectContainer {
   width: 100%;
   padding: 1rem;
   border-radius: 1.25rem;
-  border: 1px solid #3066be;
+  border: 1px solid $mainAccent;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   cursor: pointer;
-  color: #1e1e1e;
+  color: $mainColor;
   line-height: 120%;
+  text-decoration: none !important;
 
   & + & {
     margin-top: 40px;
@@ -22,6 +25,14 @@
       stroke: white !important;
     }
   }
+
+  @media screen and ($tablet) {
+    flex-direction: row;
+
+    & + & {
+      margin-top: 20px;
+    }
+  }
 }
 
 .arrowIcon {
@@ -29,6 +40,10 @@
   position: absolute;
   right: 1.25rem;
   top: 1.25rem;
+
+  @media screen and ($tablet) {
+    display: block;
+  }
 }
 
 .projectImageContainer {
@@ -40,6 +55,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and ($tablet) {
+    margin: 0 20px 0 0;
+  }
 }
 
 .projectImage {

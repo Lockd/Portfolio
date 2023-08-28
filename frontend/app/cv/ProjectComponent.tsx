@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { IProject } from "../utils/types";
 import styles from "./projectComponentStyles.module.scss";
 
@@ -27,7 +28,13 @@ const ProjectComponent: React.FC<IProject> = ({
         />
       </svg>
       <div className={styles.projectImageContainer}>
-        <img alt={title + " logo"} src={img} className={styles.projectImage} />
+        <Image
+          alt={title + " logo"}
+          src={img}
+          width={140}
+          height={140}
+          className={styles.projectImage}
+        />
       </div>
       <div className={styles.projectDescriptionContainer}>
         <h2 className={styles.projectTitle}>{title}</h2>

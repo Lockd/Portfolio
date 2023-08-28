@@ -2,7 +2,6 @@ import { IProject, IWorkExperience } from "./types";
 
 export const RESUME_SECTIONS = ["About", "Experience", "Projects"];
 
-// TODO add propper experience texts
 export const WorkExperience: IWorkExperience[] = [
   {
     companyName: "EPAM Systems",
@@ -22,7 +21,7 @@ export const WorkExperience: IWorkExperience[] = [
       "Node.js",
     ],
     years: {
-      begining: "June 2021",
+      beginning: "June 2021",
       end: "Current",
     },
     bulletPoints: [
@@ -49,7 +48,7 @@ export const WorkExperience: IWorkExperience[] = [
       "CoreUI",
     ],
     years: {
-      begining: "October 2020",
+      beginning: "October 2020",
       end: "June 2021",
     },
     bulletPoints: [
@@ -74,7 +73,7 @@ export const WorkExperience: IWorkExperience[] = [
       "Drupal",
     ],
     years: {
-      begining: "October 2020",
+      beginning: "October 2020",
       end: "June 2021",
     },
     bulletPoints: [
@@ -86,7 +85,7 @@ export const WorkExperience: IWorkExperience[] = [
   },
 ];
 
-export const Proejcts: IProject[] = [
+export const Projects: IProject[] = [
   {
     img: "/dinos-nigthmare.png",
     title: "Dino's nightmare",
@@ -104,7 +103,7 @@ export const Proejcts: IProject[] = [
     title: "Windows Defense",
     description: [
       "Your good old Windows XP is being attacked by god knows what. Seems like even files from MacOS are here. Build towers and make sure to protect your precious computer!",
-      "A tower defense game completed in a bit under 72 hours by 2 devs.",
+      "A tower defense game completed in a bit under 72 hours by 2 developers.",
       "",
       "🏆 #7 out of 123 entries in the enjoyment category",
     ],
@@ -116,7 +115,7 @@ export const Proejcts: IProject[] = [
     description: [
       'Jam\'s theme was "Delivery" so we came up with a puzzle game based on one of the oldest game concepts. Take different shapes and try placing them in the box with a very odd shape.',
       "",
-      "Ludum dare submission made in 48 hours by 3 devs.",
+      "Ludum dare submission made in 48 hours by 3 developers.",
     ],
     link: "https://lockd.itch.io/sendburgdeliveryservice",
   },
@@ -124,9 +123,9 @@ export const Proejcts: IProject[] = [
     img: "/gentle-ghost-logo.png",
     title: "Gentle gHost",
     description: [
-      "An extremely challenging project where I was working in a team of 13 other devs, artists, and musicians.",
+      "An extremely challenging project where I was working in a team of 13 other developers, artists, and musicians.",
       "You play as a gentle ghost who is trying to help his relative and clean up the house without scaring her to death",
-      'Think "Neighbours from Hell" but vice-versa and cute',
+      'Think "Neighbor from Hell" but vice-versa and cute',
       "",
       "🏆 Was rated #198 out of 6820 other entries.",
     ],

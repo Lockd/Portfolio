@@ -22,13 +22,13 @@ const WorkHistory: React.FC<IWorkExperience> = ({
   return (
     <div className={styles.workHistoryContainer}>
       <div className={styles.workHistoryHeaderContainer}>
-        <div className={styles.workHistoryTitleCotnainer}>
+        <div className={styles.workHistoryTitleContainer}>
           <p className={styles.workHistoryTitle}>
             <span className={styles.workHistoryTitleText}>{jobTitle}</span> /{" "}
             {renderCompanyName()}
           </p>
           <p className={styles.workHistoryDates}>
-            {years.begining} - {years.end}
+            {years.beginning} - {years.end}
           </p>
         </div>
         <div className={styles.workHistoryDescription}>

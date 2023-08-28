@@ -1,6 +1,18 @@
+@import "../styles/variables.scss";
+
 .workHistoryContainer {
   & + & {
     margin-top: 40px;
+  }
+
+  &:hover {
+    .workHistoryTitleText {
+      color: $mainAccent;
+    }
+
+    .skill {
+      background-color: #a6c8ff;
+    }
   }
 }
 
@@ -9,7 +21,7 @@
   flex-direction: column;
 }
 
-.workHistoryTitleCotnainer {
+.workHistoryTitleContainer {
   display: flex;
   flex-direction: column-reverse;
   // DESKTOP STYLES
@@ -27,7 +39,7 @@
 
 .workHistoryDates {
   margin-bottom: 0.5rem;
-  color: rgba(30, 30, 30, 0.5);
+  color: $transparentGray;
 }
 
 .workHistoryDescription {
@@ -59,5 +71,5 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16.8px;
-  color: #3066be;
+  color: $mainAccent;
 }

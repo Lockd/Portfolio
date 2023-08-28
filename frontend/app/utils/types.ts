@@ -6,7 +6,7 @@ export interface IWorkExperience {
   projectDescription: string;
   skills: string[];
   years: {
-    begining: string;
+    beginning: string;
     end: string;
   };
   bulletPoints: string[];

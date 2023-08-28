@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 interface ISidebar {
   sections: {
@@ -10,15 +11,13 @@ interface ISidebar {
 }
 
 const Sidebar: React.FC<ISidebar> = ({ sections }) => {
-  const getActiveClassName = (isActive: boolean, baseClassName: string) => {
-    return baseClassName + (isActive ? `${baseClassName}--active` : "");
-  };
-
   return (
     <div className={styles.sidebar}>
       <div className={styles.personalInfo}>
         <div className={styles.photoContainer}>
-          <img
+          <Image
+            width={175}
+            height={175}
             src="/profile-image.jpg"
             alt="Grigorii Pika"
             className={styles.photo}
@@ -37,13 +36,7 @@ const Sidebar: React.FC<ISidebar> = ({ sections }) => {
       <nav className={styles.navigation}>
         {sections.map((section) => (
           <div className={styles.navigationSectionContainer} key={section.name}>
-            <div
-              // TODO make this work pls
-              className={getActiveClassName(
-                section.isActive,
-                "section-container__decorative-element"
-              )}
-            />
+            <div className={styles.navigationDecorative} />
             <div className={styles.navigationSectionName}>{section.name}</div>
           </div>
         ))}
@@ -53,13 +46,13 @@ const Sidebar: React.FC<ISidebar> = ({ sections }) => {
           className={styles.ctaButton}
           href="https://www.linkedin.com/in/grigorii-pika/"
         >
-          <img src="/linkedin.svg" alt="Linkedin" />
+          <Image width={30} height={30} src="/linkedin.svg" alt="Linkedin" />
         </Link>
         <Link className={styles.ctaButton} href="https://github.com/Lockd">
-          <img src="/github.svg" alt="Github" />
+          <Image width={30} height={30} src="/github.svg" alt="Github" />
         </Link>
         <Link className={styles.ctaButton} href="mailto:pikagrigoriy@gmail.com">
-          <img src="/email.svg" alt="Email" />
+          <Image width={30} height={30} src="/email.svg" alt="Email" />
         </Link>
         <a
           className={styles.downloadResume}
