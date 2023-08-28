@@ -1,0 +1,106 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.personalInfo {
+  width: 100%;
+  display: flex;
+
+  /* DESKTOP STYLES */
+  /* margin-bottom: 200px; */
+}
+
+.personalInfoText {
+}
+
+.personalInfoTitle {
+}
+
+.personalInfoJobTitle {
+}
+
+.personalInfoDescription {
+}
+
+.navigation {
+}
+
+.navigationSectionContainer {
+}
+
+.navigationSectionName {
+}
+
+.buttonsContainer {
+  display: flex;
+}
+
+.ctaButton {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.375rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #a6c8ff;
+  }
+}
+
+.ctaButton + .ctaButton {
+  margin-left: 1rem;
+}
+
+.downloadResume {
+  padding: 0.25rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #3066be;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.photo {
+  display: block;
+}
+
+.photoContainer {
+  width: 175px;
+  height: 175px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.mainContent {
+  width: 100%;
+  /*
+  DESKTOP STYLES
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 72px 125px 72px 25px; */
+}
+
+.sectionTitle {
+  margin-top: 60px;
+  color: #3066be;
+  font-size: 28px;
+
+  /* DESKTOP STYLES
+  margin-top: 150px;
+   */
+}
+
+.sidebar__navigation {
+  margin-bottom: 285px;
+}

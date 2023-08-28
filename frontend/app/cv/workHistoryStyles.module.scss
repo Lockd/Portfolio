@@ -1,0 +1,46 @@
+.workHistoryContainer {
+}
+
+.workHistoryContainer + .workHistoryContainer {
+  margin-top: 40px;
+}
+
+.workHistoryTitleCotnainer {
+}
+
+.workHistoryTitle {
+}
+
+.workHistoryDates {
+}
+
+.workHistoryDescription {
+}
+
+.workHistoryBullets {
+}
+
+.workHistoryBullet {
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
+  /*
+  DESKTOP STYLES
+  padding: 0px 22px;
+  */
+}
+
+.skill {
+  display: block;
+  padding: 8px;
+  border: 1px solid #a6c8ff;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #3066be;
+}

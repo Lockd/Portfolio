@@ -1,0 +1,56 @@
+.projectContainer {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid #3066be;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+
+  & + & {
+    margin-top: 1.5rem;
+  }
+
+  &:hover {
+    background-color: #a6c8ff;
+
+    path {
+      stroke: white !important;
+    }
+  }
+}
+
+.arrowIcon {
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+}
+
+.projectImageContainer {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+
+.projectImage {
+  height: 100%;
+  width: auto;
+}
+
+.projectDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  line-height: 120%;
+  margin-bottom: 1.25rem;
+}
+
+.projectDescription {
+}

@@ -1,9 +1,11 @@
-import CVLayout from "../../components/layouts/cv";
+"use client";
+
 import Head from "next/head";
 import Sidebar from "./Sidebar";
-import { RESUME_SECTIONS } from "../../utils/constants";
+import { RESUME_SECTIONS } from "../utils/constants";
 import React, { useState } from "react";
 import MainContent from "./MainContent";
+import styles from "./styles.module.scss";
 
 const CV = () => {
   const [resumeSections, setResumeSections] = useState(
@@ -11,13 +13,13 @@ const CV = () => {
   );
 
   return (
-    <CVLayout>
+    <div className={styles.pageWrapper}>
       <Head>
         <title>Grigorii Pika Resume</title>
       </Head>
       <Sidebar sections={resumeSections} />
       <MainContent />
-    </CVLayout>
+    </div>
   );
 };
 
